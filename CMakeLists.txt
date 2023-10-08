@@ -7,8 +7,5 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(../giveDuckTopDownOptimizer/src/include)
 link_directories(../giveDuckTopDownOptimizer/src)
 
-add_executable(GetOptimal4JOB SQL.cpp)
+add_executable(GetOptimal4JOB main.cpp)
 target_link_libraries(GetOptimal4JOB duckdb)
-
-add_executable(TestDuckwithJOB JOBtest.cpp)
-target_link_libraries(TestDuckwithJOB duckdb)
